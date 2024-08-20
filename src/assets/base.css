@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  @apply text-heading-color;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 62px;
+
+  & span {
+    @apply text-primary-color;
+  }
+}
+
+h2 {
+  @apply text-heading-color;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+h3 {
+  @apply text-heading-color;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  @apply text-paragraph-color;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
