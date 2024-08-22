@@ -8,3 +8,5 @@ export const navItems: INav[] = [
   { id: 4, title: 'Blocks', href: '/' },
   { id: 5, title: 'Documentation', href: '/' }
 ]
+
+export const customerLogos = ['Slowa', 'keepsal', 'kybo', 'Brailie', 'Malor', 'Reatin', 'Webpaint']
