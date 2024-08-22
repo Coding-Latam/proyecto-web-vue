@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 h1 {
   @apply text-heading-color;
   font-size: 54px;
@@ -41,10 +35,4 @@ p {
   @apply text-paragraph-color;
   font-size: 17px;
   line-height: 29px;
-}
-
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 15px;
 }

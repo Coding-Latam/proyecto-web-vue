@@ -11,8 +11,8 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <nav class="py-5 px-0">
-    <div class="container flex justify-between">
+  <nav class="p-5">
+    <div class="container flex justify-between mx-auto">
       <div class="logo">
         <img :src="logo" alt="Logo image" />
       </div>
@@ -21,9 +21,7 @@ const toggleMenu = () => {
         <li v-for="item in navItems" :key="item.id">
           <a class="text-white md:text-paragraph-color" :href="item.href"> {{ item.title }} </a>
         </li>
-        <button @click="toggleMenu" v-if="isOpen" class="font-semibold absolute right-[10px] top-[20px] md:hidden">
-          Close
-        </button>
+        <button @click="toggleMenu" v-if="isOpen" class="font-semibold absolute right-5 top-5 md:hidden">Close</button>
       </ul>
     </div>
   </nav>
