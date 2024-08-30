@@ -11,13 +11,16 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <nav class="p-5">
-    <div class="container flex justify-between mx-auto">
+  <nav class="py-5">
+    <div class="container flex justify-between mx-auto max-w-7xl px-3">
       <div class="logo">
         <img :src="logo" alt="Logo image" />
       </div>
       <button @click="toggleMenu" v-if="!isOpen" class="md:hidden">Menu</button>
-      <ul :class="{ active: isOpen }" class="hidden md:flex gap-10 list-none">
+      <ul
+        :class="{ flex: isOpen, hidden: !isOpen }"
+        class="absolute inset-0 flex-col items-center gap-10 w-full pt-12 list-none bg-primary-color md:static md:flex md:flex-row md:w-fit md:pt-0 md:bg-transparent"
+      >
         <li v-for="item in navItems" :key="item.id">
           <a class="text-white md:text-paragraph-color" :href="item.href"> {{ item.title }} </a>
         </li>
@@ -26,18 +29,3 @@ const toggleMenu = () => {
     </div>
   </nav>
 </template>
-
-<style scoped>
-.active {
-  @apply bg-primary-color;
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  flex-direction: column;
-  padding: 50px 0 20px;
-  text-align: center;
-  width: 100%;
-}
-</style>
