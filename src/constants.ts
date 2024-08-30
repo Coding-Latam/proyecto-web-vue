@@ -9,4 +9,4 @@ export const navItems: INav[] = [
   { id: 5, title: 'Documentation', href: '/' }
 ]
 
-export const customerLogos = ['Slowa', 'keepsal', 'kybo', 'Brailie', 'Malor', 'Reatin', 'Webpaint']
+export const customerLogos = ['slowa', 'keepsal', 'kybo', 'brailie', 'malor', 'reatin', 'webpaint']

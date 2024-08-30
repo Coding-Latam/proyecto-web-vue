@@ -1,6 +1,6 @@
 <script setup>
 import LatamButton from './LatamButton.vue'
-import heroImage from '../assets/images/hero.svg'
+import heroImage from '/assets/images/hero.svg'
 import LatamMarquee from './LatamMarquee.vue'
 </script>
 
@@ -8,7 +8,7 @@ import LatamMarquee from './LatamMarquee.vue'
   <section class="flex flex-col gap-20 py-14 px-0">
     <div class="container flex flex-wrap items-center gap-[30px] md:flex-nowrap mx-auto max-w-7xl px-3">
       <div class="left flex flex-col gap-5">
-        <h1 class="max-w-[405px] text-[42px] md:text-[40px]"> 
+        <h1 class="max-w-[405px] text-[42px] md:text-[40px]">
           A digital agency specializing on <span>mobile design</span>
         </h1>
         <p class="text-[22px] leading-[34px] mb[30px] md:text-[18px]">

@@ -1,11 +1,12 @@
 <script setup>
 import { customerLogos } from '../constants.ts'
+const logoSrc = '/assets/images/logos/'
 </script>
 
 <template>
   <ul class="flex items-center gap-14 pl-14 ticker">
     <li v-for="logo in customerLogos" :key="logo.id">
-      <img :src="`src/assets/images/logos/${logo}.png`" :alt="logo" class="min-w-28" />
+      <img :src="`${logoSrc}${logo}.png`" :alt="logo" class="min-w-28" />
     </li>
   </ul>
 </template>
