@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { navItems } from '../constants.ts'
+import { navItems } from '@/utils/constants'
 import logo from '/assets/images/logo.png'
 
 const isOpen = ref<boolean>(false)

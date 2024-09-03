@@ -1,5 +1,5 @@
 <script setup>
-import { customerLogos } from '../constants.ts'
+import { customerLogos } from '@/utils/constants'
 const logoSrc = '/assets/images/logos/'
 </script>
 

@@ -1,12 +1,12 @@
 <script setup>
 import { onMounted, ref } from 'vue'
-import LatamFaq from './LatamFaq.vue'
-import LatamButton from './LatamButton.vue'
-
+import { API_URL } from '@/utils/constants'
+import 'latamcomponents/latam-faq'
+import 'latamcomponents/latam-button'
 const faqs = ref(null)
 
 onMounted(async () => {
-  faqs.value = await fetch('http://localhost:3000/faqs').then((result) => result.json())
+  faqs.value = await fetch(`${API_URL}/faqs`).then((result) => result.json())
 })
 </script>
 
@@ -21,11 +21,11 @@ onMounted(async () => {
           Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis
           risus eget urna mollis ornare.
         </p>
-        <LatamButton content="All FAQs" href="/faqs" />
+        <latam-button label="All FAQs" href="/faqs" />
       </div>
       <div className="right">
         <div className="flex flex-col gap-5">
-          <LatamFaq v-for="faq in faqs" :key="faq.id" :question="faq.question" :answer="faq.answer" />
+          <latam-faq v-for="faq in faqs" :key="faq.id" :question="faq.question" :answer="faq.answer" />
         </div>
       </div>
     </div>

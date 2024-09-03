@@ -1,7 +1,7 @@
 <script setup>
-import LatamButton from './LatamButton.vue'
 import heroImage from '/assets/images/hero.svg'
 import LatamMarquee from './LatamMarquee.vue'
+import 'latamcomponents/latam-button'
 </script>
 
 <template>
@@ -14,7 +14,7 @@ import LatamMarquee from './LatamMarquee.vue'
         <p class="text-[22px] leading-[34px] mb[30px] md:text-[18px]">
           We are an award winning design agency that strongly believes in the power of creative ideas.
         </p>
-        <LatamButton content="Get started" href="/get-started" />
+        <latam-button label="Get started" href="/get-started" />
       </div>
       <div class="right">
         <img :src="heroImage" alt="Hero" loading="eager" />
