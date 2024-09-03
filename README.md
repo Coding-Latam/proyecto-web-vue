@@ -1,39 +1,55 @@
-# proyecto-web-vue
+# Proyecto Web React
 
-This template should help get you started developing with Vue 3 in Vite.
+This is the React + Typescript + Tailwindcss version of the original web project
 
-## Recommended IDE Setup
+You can find the Figma file [here](<https://www.figma.com/design/DOHH9PD0gg1asAmPoxQ33G/50%2B-Landing-Page-design-free-(Community)?node-id=2101-1035&t=XFxHPKVYQdwbL5hp-0>)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## ⚙️ Installation
 
-## Type Support for `.vue` Imports in TS
+Follow these steps to set up and run the project in your local environment:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Clone this repository:
 
-## Customize configuration
+```bash
+git clone https://github.com/Coding-Latam/proyecto-web-vue.git
+cd repo
+```
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Install the necessary dependencies:
 
-## Project Setup
-
-```sh
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Usage
 
-```sh
+To start the development server:
+
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+This will open the application in your default browser at [http://localhost:5173](http://localhost:5173).
 
-```sh
-npm run build
-```
+## 📜 Commands
 
-### Lint with [ESLint](https://eslint.org/)
+- `npm run dev` - Starts the development server.
+- `npm run build` - Builds the application for production.
+- `npm run preview` - Previews the production build on a local server.
+- `npm run lint` - Runs linters to ensure code quality.
 
-```sh
-npm run lint
-```
+## 🛠️ Dependencies
+
+- **React** - Library for building user interfaces.
+- **ViteJS** - Fast and lightweight bundling tool.
+- **TypeScript** - Programming language with static typing.
+
+To see the full list of dependencies and their versions, check the `package.json` file.
+
+## 🌱 Contribution
+
+1. Fork the repository.
+2. Create a branch for your new feature (`git checkout -b feature/new-feature`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push your changes to your branch (`git push origin feature/new-feature`).
+5. Open a Pull Request.
