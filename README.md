@@ -1,6 +1,6 @@
-# Proyecto Web React
+# Proyecto Web Vue
 
-This is the React + Typescript + Tailwindcss version of the original web project
+This is the Vue + Typescript + Tailwindcss version of the original web project
 
 You can find the Figma file [here](<https://www.figma.com/design/DOHH9PD0gg1asAmPoxQ33G/50%2B-Landing-Page-design-free-(Community)?node-id=2101-1035&t=XFxHPKVYQdwbL5hp-0>)
 
@@ -40,7 +40,7 @@ This will open the application in your default browser at [http://localhost:5173
 
 ## 🛠️ Dependencies
 
-- **React** - Library for building user interfaces.
+- **Vuejs** - Library for building user interfaces.
 - **ViteJS** - Fast and lightweight bundling tool.
 - **TypeScript** - Programming language with static typing.
 
